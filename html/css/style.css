@@ -1,62 +1,85 @@
-* * {
-    box-sizing: border-box;
-  }
+body,h1,h2, p, ul, li, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+a { text-decoration: none;}
+
+img { display: block; max-width: 100%;}
+
+* { box-sizing: border-box;}
   
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
   
   /* Style the header */
-  .header {
-    background-color: #f1f1f1;
-    padding: 30px;
-    max-height: 100px;
-  }
-  
-  /* Container for flexboxes */
-  .row {
-    display: -webkit-flex;
+  .menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
     display: flex;
-  }
-  
-  /* Create three equal columns that sits next to each other */
-  .column {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Style the footer */
-  .footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #f1f1f1;
-    width: 50%;
-    height: 60px;
-  }
-
-  /* Style the topnav links */
-.topnav a {
-  float: right;
-  display: block;
-  color: #000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-nav ul  {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.menu-nav a {
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
+}
+.menu-nav a:hover {
+  color:#122ab2 ;
 } 
 
-.logo {width: 30%;}
-.logo img { height: 29.5px;}
+.hero-bg {
+  background-image: url("/pretitos/html/images/hero-pretito.png");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-principal {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-flow: column;
+  padding-right: 400px;
+  padding-top: 60px;
+  color: white;
+}
+
+.hero-principal h1 {
+  font-family: Hanuman, 'Times New Roman', Times, serif;
+  font-size: 2.25em;
+  font-weight: 900;
+}
+.hero-principal > *{
+
+  margin-bottom: 36px ;
+
+}
+.hero-principal p {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.hero-principal a { display: block ;
+                    color: white;
+                    background-color: #322E2B;
+                    max-width: 290px;
+                    padding: 20px 40px;
+                    font-weight: 500;
+                    text-align: center;
+                  }
