@@ -1,6 +1,9 @@
+html {scroll-behavior: smooth;}
 body,h1,h2, p, ul, li, a {
   margin: 0px;
   padding: 0px;
+  font-family: Roboto;
+  
 }
 
 ul {
@@ -20,7 +23,7 @@ img { display: block; max-width: 100%;}
   .menu {
     max-width: 960px;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 15px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -35,28 +38,39 @@ img { display: block; max-width: 100%;}
   font-size: 1.25em;
   display: block;
   padding: 10px;
+  color: #322E2B;
+  border-bottom: solid 4px white  ;
+  transition: border-bottom 400ms;
+   
 }
 .menu-nav a:hover {
-  color:#122ab2 ;
+  color:#322E2B ;
+  border-bottom: solid 4px #322E2B;
 } 
 
+
+@media (max-width: 800px) {
+  .menu-nav a {
+    font-size: 1.1em;
+}
+}
 .hero-bg {
-  background-image: url("/pretitos/html/images/hero-pretito.png");
+  background-image: url("/html/images/hero-pretito.png");
   background-color: #cccccc;
-  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  min-height: 500px;
+  
 }
 .hero-principal {
   display: flex;
   max-width: 960px;
   margin: 0 auto;
+  padding: 60px 20px;
   flex-wrap: wrap;
   flex-flow: column;
   padding-right: 400px;
-  padding-top: 60px;
   color: white;
 }
 
@@ -65,6 +79,8 @@ img { display: block; max-width: 100%;}
   font-size: 2.25em;
   font-weight: 900;
 }
+
+
 .hero-principal > *{
 
   margin-bottom: 36px ;
@@ -82,4 +98,381 @@ img { display: block; max-width: 100%;}
                     padding: 20px 40px;
                     font-weight: 500;
                     text-align: center;
+                    transition: padding 400ms ;
+                    
                   }
+
+                 
+
+.hero-principal a:hover { 
+
+  text-decoration: underline;
+  padding: 25px;
+}                   
+
+/* Media Query de Hero imagem Princiapl */
+
+@media (max-width: 800px) {
+.hero-bg {
+ 
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.hero-principal {
+  align-items: center;
+  justify-content: center; 
+  padding-right: 10px;
+  
+}
+
+.hero-principal h1 {
+  font-size: 1.9em;
+  font-weight: 900;
+}
+
+
+.hero-principal > *{
+
+  margin-bottom: 36px ;
+
+}
+.hero-principal p {
+ 
+  font-size: 0.9em;
+}
+
+.hero-principal a { display: block ;
+                    color: white;
+                    background-color: #322E2B;
+                    max-width: 290px;
+                    padding: 20px 40px;
+                    font-weight: 500;
+                    text-align: center;
+                    transition: padding 400ms ;
+                    
+                  }
+
+                 
+
+.hero-principal a:hover { 
+
+  text-decoration: underline;
+  padding: 25px;
+}    
+
+}
+
+/* fim de Media QUery de Hero Imagem Principal <>*/
+.blog-bg {
+
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-content: space-between;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.blog-info, .blog-info2 {
+  flex: 1;
+  margin-top: 40px;
+  
+}
+
+.blog-info > * {
+
+  margin-bottom: 36px;
+}
+
+.blog-info { 
+  background: #305289;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.blog-info2 {
+  display: flex;
+  flex-wrap: wrap;
+  
+  color: #88827D;
+  padding-top: 24px;
+  padding-left: 28px;
+  
+}
+
+.blog-info2 h1 {
+
+  font-size: 36px;
+  line-height: 1.4em;
+  align-self: flex-start;
+}
+
+.blog-thumb2{
+
+  align-self: flex-end;
+}
+
+/* Media querys de  blog */
+@media (max-width: 800px) {
+.blog-bg {
+
+  flex-flow: column;
+  
+}
+
+.blog-info { 
+  background: #305289;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.blog-info2 {
+  display: flex;
+  flex-wrap: wrap;
+  
+  color: #88827D;
+  padding-top: 24px;
+  padding-left: 28px;
+  
+}
+
+.blog-info2 h1 {
+
+  font-size: 36px;
+  line-height: 1.4em;
+  align-self: flex-start;
+}
+
+.blog-thumb2{
+
+  align-self: flex-end;
+}
+
+}
+
+/* termino da media query de blog </> */
+
+
+.hero-treinamento-bg {
+  background-image: url("/html/images/hero-pretito-helena.png");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-treinamento {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+  flex-wrap: wrap;
+  flex-flow: column;
+  padding-right: 400px;
+  color: white;
+
+}
+
+
+
+.hero-treinamento h1 {
+  font-family: Hanuman, 'Times New Roman', Times, serif;
+  font-size: 2.25em;
+  font-weight: 900;
+}
+.hero-treinamento > *{
+
+  margin-bottom: 36px ;
+
+}
+.hero-treinamento p {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.hero-treinamento a { display: block ;
+                    color: white;
+                    background-color: #322E2B;
+                    max-width: 290px;
+                    padding: 20px 40px;
+                    font-weight: 500;
+                    text-align: center;
+                    transition: padding 400ms ;
+                    
+                  }
+
+                 
+
+.hero-treinamento a:hover { 
+
+  text-decoration: underline;
+  padding: 25px;
+} 
+
+/* Media query de hero Treinamento */
+
+@media (max-width: 800px) {
+  .hero-treinamento-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+  }
+  .hero-treinamento  {
+   
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+  .hero-treinamento h1 {
+    font-size: 1.8em;
+
+  }
+  .hero-treinamento > *{
+
+    margin-bottom: 18px ;
+  
+  }
+  .hero-treinamento p {
+    font-size: 0.9em;
+  }
+  
+  
+}
+
+/* Fim de Media query de hero Treinamento <> */
+
+
+.fale-conosco {
+
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-content: space-between;
+  color: #000;
+  margin-bottom: 40px;
+  
+
+}
+
+.formulario, .fale-conosco-infos {
+  flex: 1;
+  margin-top: 40px;
+  
+}
+
+/* Media query de fale conosco */
+
+@media (max-width: 800px) {
+  .fale-conosco {
+    flex-flow: column;
+    align-content:flex-start;
+  }
+}
+.formulario .formulario-fale-conosco { padding: 0 20px; padding-right: 47px;}
+
+
+.formulario { padding: 20px 0px;}
+.formulario h2 { 
+    font-family: roboto;
+    font-weight: bold; 
+    font-size: 1.5em; 
+    text-transform: uppercase; 
+    color: #364E6A;
+    text-align: center;
+    margin: 25px;
+  }
+
+.fale-conosco-infos { 
+  background-color: #E0D8D0;
+  padding-bottom: 20px;
+}
+.formulario .formulario-fale-conosco {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  
+}
+.formulario .formulario-fale-conosco input, .formulario .formulario-fale-conosco label{
+flex: 1;
+
+}
+
+.formulario .formulario-fale-conosco input, .formulario .formulario-fale-conosco textarea {
+  padding: 20px;
+  padding-left: 5px;
+ border-left:  solid #fff 2px;
+ border-right: solid #fff 2px;
+ border-top: solid #fff 2px;
+
+}
+.formulario .formulario-fale-conosco ::placeholder {
+  color: #A3A2A3;
+}
+
+.formulario .formulario-fale-conosco input:focus {
+  color:#cccccc;
+ 
+}
+
+.formulario .formulario-fale-conosco label {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.formulario .formulario-fale-conosco input[type="submit"] {
+  background: #305289;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase; 
+}
+.fale-conosco-infos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.fale-conosco-infos h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: roboto;
+  font-weight: bold; 
+  font-size: 1.5em; 
+  text-transform: uppercase; 
+  color: #364E6A;
+  text-align: center;
+  margin: 25px;
+}
+.fale-conosco-infos  {
+  color: #857F78;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #323232; 
+  font-size: 1.2em;
+  color: #fff;
+}

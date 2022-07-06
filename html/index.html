@@ -17,15 +17,17 @@
      
     <nav class="menu-nav">
       <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="#bemvindo">Bem vindo</a></li>
+        <li><a href="#guiadepasseio">Guia </a></li>
+        <li><a href="#treinamento">Treinamento</a></li>
+        <li><a href="#entreemcontato">Contato</a></li>
+
       </ul>
      
     </nav>     
     
   </header>
-  <section class="hero-bg">
+  <section class="hero-bg" id="bemvindo">
     <div class="hero-principal">
       <h1>Bem vindo à vida de cachorro do Pretito</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et congue tortor. 
@@ -37,64 +39,57 @@
     </div>
       
   </section>
-  <section class="">
-    <section class="">
-      <img src="" alt="pretito passeador">
-      <p>Lorem ipsum dolor sit amet, 
+  <section class="blog-bg" id="guiadepasseio">
+    <div class="blog-info">
+      <img src="/html/images/pretito-passeando.png" alt="pretito passeador" class="blog-thumb1">
+      <p class="blog-resumo">Lorem ipsum dolor sit amet, 
         consectetur adipiscing elit. In et congue tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis at mi nibh.
          Sed non leo massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce a odio et quam semper placerat.
         </p>
-    </section>
-    <section class="coluna">
-      <img src="" alt="pretito passeiro">
+    </div>
+    <div class="blog-info2">
+      <h1>O guia completo para passear com o Pretito</h1>
+      <img src="/html/images/pretito-nomundo.png" alt="pretito passeiro" class="blog-thumb2">
 
-    </section>
+    </div>
   </section>
-  <section class="hero treinamento">
-    <h2>Treinamento do Pretito</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et congue tortor. 
-      Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-       Duis at mi nibh. Sed non leo massa. 
-       Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Fusce a odio et quam semper placerat.</p>
-    <a href="#" class="button">FALE COM O PRETITO</a>    
-  </section>
-  <section class="fale-conosco">
+  <section class="hero-treinamento-bg" id="treinamento">
+    <div class="hero-treinamento">
+      <h1>Treinamento do Pretito</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et congue tortor. 
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Duis at mi nibh. Sed non leo massa. 
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          Fusce a odio et quam semper placerat.</p>
+      <a href="#" class="button">FALE COM O PRETITO</a>    
+      </div>
+  </section>  
+    <section class="fale-conosco" id="entreemcontato">
     <div class="formulario">
-      <h3>Entre em contato conosco</h3>
+      <h2>Entre em contato conosco</h2>
       <form class="formulario-fale-conosco" action="">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome"><br>
-        <label for="nome">Nome</label>
-        <input type="email" name="nome" id="nome"><br>
+        <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="E-mail"><br>
         <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea><br>
-        <input type="button" value="enviar">
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea><br>
+        <input type="submit" value="enviar" class="enviar" id="enviar">
       </form>
     </div>
-    <div>
-      <h3>Ligue para nós</h3>
+    <div class="fale-conosco-infos">
+      <h2>Ligue para nós</h2>
       <p>(096) 9911-11111</p>
       <p>(096) 9911-11111</p>
-      <h3>LOCALIZAÇÃO</h3>
+      <h2>LOCALIZAÇÃO</h2>
       <p>(096) Rua dos bobos, numero zero</p>
       <p>(096) Bairro do palhaço</p>
     </div>
   </section>
-  <footer>
+  <footer class="footer" id="footer">
     <p>Todos os direitos reservados&#174;
 
     </p>
   </footer>
-    </body>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+ </body>
 </html>
