@@ -263,7 +263,7 @@ img { display: block; max-width: 100%;}
 
 
 .hero-treinamento-bg {
-  background-image: url("/html/images/hero-pretito-helena.png");
+  background-image: url("../images/hero-pretito-helena.png");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
